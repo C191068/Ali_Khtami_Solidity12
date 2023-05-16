@@ -59,6 +59,9 @@ also reset  ```addressToAmountFunded```. Since we are withdrawing all funds thos
 for that we have to loop through the funders array which is this one ```address[] public funders;``` and update our mapping which is this line of code <br>
 ``` mapping(address => uint256) public addressToAmountFunded ;``` so that all funders have zero as we are withdrawing funs from them<br>
 
+For this we gonna use something called ```for loop```<br>
+
+
 
 
 
