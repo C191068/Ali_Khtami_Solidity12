@@ -56,5 +56,10 @@ contract akrkFundMe  {
 since we are gonna withdraw all funds out of this contract we also gonna reset in the above contract funders array in this line ```address[] public funders;```<br>
 also reset  ```addressToAmountFunded```. Since we are withdrawing all funds those amounts should go down to zero<br>
 
+for that we have to loop through the funders array which is this one ```address[] public funders;``` and update our mapping which is this line of code <br>
+``` mapping(address => uint256) public addressToAmountFunded ;``` so that all funders have zero as we are withdrawing funs from them<br>
+
+
+
 
 
