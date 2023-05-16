@@ -54,7 +54,7 @@ contract akrkFundMe  {
 ```
 
 since we are gonna withdraw all funds out of this contract we also gonna reset in the above contract funders array in this line ```address[] public funders;```<br>
-also reset  ```addressToAmountFunded```
+also reset  ```addressToAmountFunded```. Since we are withdrawing all funds those amounts should go down to zero<br>
 
 
 
