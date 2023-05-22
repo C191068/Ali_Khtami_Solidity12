@@ -267,6 +267,8 @@ Now we will modify the ```withdraw``` function below so that only the owner of t
 
 
 
+
+
 //SPDX-License-Identifier:MIT
 
 pragma solidity ^0.8.8;
@@ -350,23 +352,21 @@ contract akrkFundMe  {
      require(callSuccess, "Call failed");
 
 
-     modifier onlyOwner {
+     
+}
+
+
+modifier onlyOwner {
          require(msg.sender == owner, "Sender is not owner!");// to check is msg.sender is equal to owner
          _;
      }
 
-
-
-
-
-
-
-  }
   
    
     
 
 }
+
 
 
 
