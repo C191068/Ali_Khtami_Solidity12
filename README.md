@@ -401,7 +401,7 @@ when we click ```owner``` button it shows the account addess of our metamask wal
 To set the ```Value``` option at ```Deploy and Run transaction``` tab at my repository https://github.com/C191068/Ali_Khatami_solidity_09
 I have shown a calculation which i again want to repeat below :
 
-As 
+As the current price of ETH in terms of USD is $1,816.75
 
 
 
