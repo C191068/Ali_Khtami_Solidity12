@@ -128,6 +128,10 @@ exceeds ```2300``` gas but returns bool i.e whether it is successful or not <br>
 
 ```transfer``` method automatically reverts if the transaction fails <br>
 ```send``` method will revert only if we use this ```require(sendSuccess, "fail to send");``` statement <br>
+```call``` is gonna be one of the first lower level commands that we use in solidity<br>
+```call``` is actually incedibly powerful and we can use it virtually to call any function in all of the <br>
+ethereum without having any ABI<br>
+
 
 
 
