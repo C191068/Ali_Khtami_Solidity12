@@ -7,6 +7,7 @@ for that we made change in the code below of ```akrkFundeMe.sol``` <br>\
 ```
 
 
+
 //SPDX-License-Identifier:MIT
 
 pragma solidity ^0.8.8;
@@ -66,12 +67,21 @@ contract akrkFundMe  {
       payable(msg.sender).transfer(address(this).balance);
       //here we typecast msg.sender form address typr to payable address type
 
+      //send method
+
+      bool sendSuccess= payable(msg.sender).send(address(this).balance);
+      require(sendSuccess, "fail to send");
+      
+
+
+
   }
   
    
     
 
 }
+
 
 
 
@@ -115,6 +125,10 @@ transfer (2300 gas, throws error), if gas limits exceed 2300 gas it will return 
 
 but in case of send method it shows ```send (2300 gas, returns bool)``` which is it will not show error if <br>
 exceeds ```2300``` gas but returns bool i.e whether it is successful or not <br>
+
+```transfer``` method automatically reverts if the transaction fails <br>
+```send``` method will revert only if we use this ```require(sendSuccess, "fail to send");``` statement <br>
+
 
 
 
