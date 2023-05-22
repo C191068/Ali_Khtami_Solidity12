@@ -95,6 +95,9 @@ there are three differnt ways To send ether or native blockchain currency to who
 2. send<br>
 3. call<br>
 
+here ```transfer``` is the simplest and mostly used<br>
+
+
 
 
 
