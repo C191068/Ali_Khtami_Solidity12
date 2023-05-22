@@ -63,6 +63,9 @@ For this we gonna use something called ```for loop```<br>
 
 A ```for loop``` is a way to loop through some type of index object or loop through a range of numbers or just do a task a certain amount of times repeating<br>
 
+In ```for loop``` we will give the following <br>
+```for(starting index,ending index,step amount)```
+
 
 
 
