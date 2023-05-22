@@ -432,6 +432,16 @@ Figure7: if we copy our metamask account address to ```addresstoAmountFunded``` 
 we see that the amount which is funded shows up <br>
 
 
+![w8](https://github.com/C191068/Ali_Khtami_Solidity13/assets/89090776/034cb104-40aa-4412-89a8-f7d975f7a7e7)
+Figure8: at ```funders``` button field when we write 0 and 1 index we see our metamask wallet account address<br>
+
+![w9](https://github.com/C191068/Ali_Khtami_Solidity13/assets/89090776/2d79e7e8-df29-4b31-a0bc-0b64f84f355b)
+Figure9; but see error when we type 2<br>
+
+
+
+
+
 
 
 
