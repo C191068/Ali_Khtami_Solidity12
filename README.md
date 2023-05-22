@@ -153,6 +153,8 @@ we simply modified the code below:
 
 
 
+
+
 //SPDX-License-Identifier:MIT
 
 pragma solidity ^0.8.8;
@@ -169,6 +171,12 @@ contract akrkFundMe  {
 // we have use payable keyword with the function below to make it payable with any native blockchain currency
     //below we have done mapping of addresses to how much money each of the people sent
     mapping(address => uint256) public addressToAmountFunded ;
+
+    //thefunction below will set up as the owner of the contract 
+
+    function CallMeCaptain(){
+
+    }
 
     function fund() public payable {
      
@@ -231,6 +239,8 @@ contract akrkFundMe  {
 }
 
 
+
+
 ```
 
 Now in the above code if we use anybody can withdraw from this contract but we don't want everyone to withdraw from this contract<br>
@@ -239,8 +249,9 @@ We want only person who is collecting the fund able to withdraw the fund <br>
 Withdraw function can only be called by the owner of the contract<br>
 For that we have to make such settings so that whoever deploy this contract will be the owner of this contarct<br>
 
-
-
+```function CallMeCaptain()``` this function will take two transactions and it will be much annoying and for that <br>
+there is a solution in solidity which is known as ```constructor```, ```constructor``` is gonna be a function that gets called<br>
+immedietly if we deploy this contract <br>
 
 
 
