@@ -405,7 +405,20 @@ As the current price of ETH in terms of USD is $1,816.75<br>
 
 here our minimum value is set to $50
 
-therefore 50/1816.75 = 0.027+0.006 = 0.033 which is approximately enough and which is about 33000000000000000 WEI
+therefore 50/1816.75 = 0.027+0.006 = 0.033 which is approximately enough and which is about 33000000000000000 WEI<br>
+
+One think to keep in mind by clicking ```fund``` we gonna actually pay money to this contract <br>
+
+by clicking ```withdraw``` button we gonna take money from this contract <br>
+
+
+![w3](https://github.com/C191068/Ali_Khtami_Solidity13/assets/89090776/d065111a-cf9a-4609-81cd-5ebbcde7d860)
+Figure3: When we paste the above calculated value of WEI at the value option and click ```fund``` button <br>
+the metamask windows pop up and shows the amount of Sepolia ETH we gonna pay to this contract which is ```0.033 Sepolia Eth```<br>
+
+
+
+
 
 
 
