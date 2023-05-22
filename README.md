@@ -7,6 +7,7 @@ for that we made change in the code below of ```akrkFundeMe.sol``` <br>\
 ```
 
 
+
 //SPDX-License-Identifier:MIT
 
 pragma solidity ^0.8.8;
@@ -53,6 +54,12 @@ contract akrkFundMe  {
           // we gonna use the above line to reset our mapping 
           addressToAmountFunded[funder]=0;
       }
+
+      // reset the array
+      //here below the funders array is now equal to brand new address array with zero object to start with
+      // if 1 in the first bracket then there will be one element to start with
+      funders= new address[](0);
+
   }
   
    
