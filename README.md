@@ -382,6 +382,12 @@ Modifier is gonna be a keyword that we gonna use in the function declaration to 
 by adding ```modifier``` to thsi function ```function withdraw() public onlyOwner``` we are giving command to the function <br>
 at fisrt do whatever in the ``` modifier onlyOwner``` and do the rest <br>, ``` _;``` means execute rest of the code <br>
 
+Now we will implement on test net below and it will be sucessfully deployed<br>
+
+![w1](https://github.com/C191068/Ali_Khtami_Solidity13/assets/89090776/915dfdb4-d67b-4f7b-b5ec-de72ddc154ff)
+
+
+
 
 
 
