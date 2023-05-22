@@ -398,6 +398,10 @@ Figure2: successfully deployed and transaction occured<br>
 Figure3: in the ddeployed contract we can see that when we click ```mininmumUSD``` button it shows ```$50```<br>
 when we click ```owner``` button it shows the account addess of our metamask wallet account <br>
 
+To set the ```Value``` option at ```Deploy and Run transaction``` tab at my repository https://github.com/C191068/Ali_Khatami_solidity_09
+I have shown a calculation which i again want to repeat below :
+
+As 
 
 
 
