@@ -385,6 +385,9 @@ at fisrt do whatever in the ``` modifier onlyOwner``` and do the rest <br>, ``` 
 Now we will implement on test net below and it will be sucessfully deployed<br>
 
 ![w1](https://github.com/C191068/Ali_Khtami_Solidity13/assets/89090776/915dfdb4-d67b-4f7b-b5ec-de72ddc154ff)
+Figure1: successfully deployed and transaction occured<br>
+
+
 
 
 
