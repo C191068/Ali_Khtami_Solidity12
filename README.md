@@ -113,6 +113,10 @@ https://solidity-by-example.org/sending-ether/ <br>
 if we visit the link above we can find the issues of ```transfer``` method of sending ether which is <br>
 transfer (2300 gas, throws error), if gas limits exceed 2300 gas it will return error<br>
 
+but in case of send method it shows ```send (2300 gas, returns bool)``` which is it will not show error if <br>
+exceeds ```2300``` gas but returns bool i.e whether it is successful or not <br>
+
+
 
 
 
