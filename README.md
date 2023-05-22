@@ -265,6 +265,8 @@ Now we will modify the ```withdraw``` function below so that only the owner of t
 
 ```
 
+
+
 //SPDX-License-Identifier:MIT
 
 pragma solidity ^0.8.8;
@@ -317,9 +319,11 @@ contract akrkFundMe  {
 
   //below we will create a withdraw function
 
-  function withdraw() public{
+  //we use modifier in the function below
 
-      require(msg.sender == owner, "Sender is not owner!");// to check is msg.sender is equal to owner
+  function withdraw() public onlyOwner{
+
+      
 
       for(uint256 funderIndex=0; funderIndex < funders.length; funderIndex++){
 
@@ -346,6 +350,12 @@ contract akrkFundMe  {
      require(callSuccess, "Call failed");
 
 
+     modifier onlyOwner {
+         require(msg.sender == owner, "Sender is not owner!");// to check is msg.sender is equal to owner
+         _;
+     }
+
+
 
 
 
@@ -359,13 +369,18 @@ contract akrkFundMe  {
 }
 
 
+
 ```
 
      
 
 
 If we want to use this line ```require(msg.sender == owner, "Sender is not owner!");``` in every functions of the contract<br>
-we have to use something called modifier<br.
+we have to use something called modifier<br>
+
+Modifier is gonna be a keyword that we gonna use in the function declaration to modify the function with that functionality<br>
+
+
 
 
 
