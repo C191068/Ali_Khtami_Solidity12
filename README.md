@@ -152,9 +152,6 @@ we simply modified the code below:
 
 
 
-
-
-
 //SPDX-License-Identifier:MIT
 
 pragma solidity ^0.8.8;
@@ -172,11 +169,17 @@ contract akrkFundMe  {
     //below we have done mapping of addresses to how much money each of the people sent
     mapping(address => uint256) public addressToAmountFunded ;
 
-    //thefunction below will set up as the owner of the contract 
 
-    function CallMeCaptain(){
+    address public owner;// this is a global variable
 
-    }
+
+
+    //the constructor below will set up as the owner of the contract
+
+     constructor(){
+
+     }
+
 
     function fund() public payable {
      
