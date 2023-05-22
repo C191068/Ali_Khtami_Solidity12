@@ -417,6 +417,14 @@ Figure3: When we paste the above calculated value of WEI at the value option and
 the metamask windows pop up and shows the amount of Sepolia ETH we gonna pay to this contract which is ```0.033 Sepolia Eth```<br>
 
 
+![w4](https://github.com/C191068/Ali_Khtami_Solidity13/assets/89090776/84c3497a-875d-4f64-b60a-d9066a16dc3b)
+Figure4; after clicking the ```Confirm``` button successful transaction occured<br>
+
+![w5](https://github.com/C191068/Ali_Khtami_Solidity13/assets/89090776/6d31e487-63e4-48d0-ae21-b57b0e255582)
+Figure5: on etherscan on search button when we paste the address of the deployed contract we see that <br>
+two types of transactions occured one due to contract deployment and another due to clicking of the ```fund``` button <br>
+
+
 
 
 
