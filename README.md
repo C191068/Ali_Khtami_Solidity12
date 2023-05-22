@@ -233,6 +233,7 @@ contract akrkFundMe  {
 
 ```
 
+Now in the above code if we use anybody can withdraw from this contract but we don't want everyone to withdraw from this contract<br>
 
 
 
