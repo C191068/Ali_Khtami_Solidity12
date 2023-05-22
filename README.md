@@ -427,6 +427,10 @@ two types of transactions occured one due to contract deployment and another due
 ![w6](https://github.com/C191068/Ali_Khtami_Solidity13/assets/89090776/48e4e269-87ab-498c-b8a4-9737c611dea1)
 figure6: if we add again ```0.033 Eth``` the amount will rise up to ```0.066 Eth``` this is what we expected<br>
 
+![w7](https://github.com/C191068/Ali_Khtami_Solidity13/assets/89090776/287ddf00-dcee-44dc-8cc9-54f9685cf164)
+Figure7: if we copy our metamask account address to ```addresstoAmountFunded``` button field and click the button<br>
+we see that the amount which is funded shows up <br>
+
 
 
 
