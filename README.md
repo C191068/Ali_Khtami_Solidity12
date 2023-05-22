@@ -6,6 +6,7 @@ for that we made change in the code below of ```akrkFundeMe.sol``` <br>\
 
 ```
 
+
 //SPDX-License-Identifier:MIT
 
 pragma solidity ^0.8.8;
@@ -59,8 +60,11 @@ contract akrkFundMe  {
       funders= new address[](0);
       // if we want to transfer fund to whomever is calling the withdrawal function we wil do the 
       //following
-      msg.sender.transfer(address(this).balance) //here 'this' refers to the whole 'akrkFundMe' contract
+     // msg.sender.transfer(address(this).balance); //here 'this' refers to the whole 'akrkFundMe' contract
       // by using .balance we can get ethereum blockchain currency of this contract address 
+
+      payable(msg.sender).transfer(address(this).balance);
+      //here we typecast msg.sender form address typr to payable address type
 
   }
   
@@ -68,9 +72,6 @@ contract akrkFundMe  {
     
 
 }
-
-
-
 
 
 
@@ -103,6 +104,10 @@ there are three differnt ways To send ether or native blockchain currency to who
 3. call<br>
 
 here ```transfer``` is the simplest and mostly used<br>
+
+here we need to know that msg.sender is of address type and payable(msg.sender) is of payable address type<br>
+In solidity in order to send native blockchain currency ethereum we need to work with ```payable address``` type<br>
+
 
 
 
