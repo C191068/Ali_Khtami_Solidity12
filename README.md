@@ -405,7 +405,7 @@ As the current price of ETH in terms of USD is $1,816.75<br>
 
 here our minimum value is set to $50
 
-therefore 50/1816.75 = 0.027+0.006 = 0.033 which is approximately enough
+therefore 50/1816.75 = 0.027+0.006 = 0.033 which is approximately enough and which is about 33000000000000000 WEI
 
 
 
