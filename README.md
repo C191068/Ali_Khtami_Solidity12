@@ -6,6 +6,7 @@ for that we made change in the code below of ```akrkFundeMe.sol``` <br>\
 
 ```
 
+
 //SPDX-License-Identifier:MIT
 
 pragma solidity ^0.8.8;
@@ -44,12 +45,21 @@ contract akrkFundMe  {
 
   //below we will create a withdraw function
 
-  function withdraw() public{}
+  function withdraw() public{
+
+      for(uint256 funderIndex=0; funderIndex < funders.length; funderIndex++){
+
+          address funder = funders[funderIndex]; //to access the first element or 0th element and gonna return an address for us to use
+          // we gonna use the above line to reset our mapping 
+          addressToAmountFunded[funder]=0;
+      }
+  }
   
    
     
 
 }
+
 
 ```
 
@@ -64,7 +74,14 @@ For this we gonna use something called ```for loop```<br>
 A ```for loop``` is a way to loop through some type of index object or loop through a range of numbers or just do a task a certain amount of times repeating<br>
 
 In ```for loop``` we will give the following <br>
-```for(starting index,ending index,step amount)```
+```for(starting index,ending index,step amount)```<br>
+
+
+In ``` function fund() public payable``` we update the amount ```addressToAmountFunded[msg.sender] = msg.value;``` whwnever we fund<br>
+the contract<br>
+
+when we withdraw the money from the contract at here ```function withdraw() public``` we gonna rsest it back to zero <br>
+by this line ```addressToAmountFunded[funder]=0;```<br>
 
 
 
