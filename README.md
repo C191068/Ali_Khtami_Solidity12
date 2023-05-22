@@ -90,6 +90,12 @@ the contract<br>
 when we withdraw the money from the contract at here ```function withdraw() public``` we gonna rsest it back to zero <br>
 by this line ```addressToAmountFunded[funder]=0;```<br>
 
+there are three differnt ways To send ether or native blockchain currency to whomever is calling
+1. transfer <br>
+2. send<br>
+3. call<br>
+
+
 
 
 
