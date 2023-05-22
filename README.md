@@ -7,7 +7,6 @@ for that we made change in the code below of ```akrkFundeMe.sol``` <br>\
 ```
 
 
-
 //SPDX-License-Identifier:MIT
 
 pragma solidity ^0.8.8;
@@ -71,7 +70,12 @@ contract akrkFundMe  {
 
       bool sendSuccess= payable(msg.sender).send(address(this).balance);
       require(sendSuccess, "fail to send");
-      
+
+      //call
+
+      (bool callSuccess, bytes dataReturned)= payable(msg.sender).call{value: address(this).balance}("")//here inside the bracket of call we gonna call function but now it is kept blank
+     // here it gonna returned two variables 
+
 
 
 
@@ -81,9 +85,6 @@ contract akrkFundMe  {
     
 
 }
-
-
-
 
 
 ```
@@ -131,6 +132,13 @@ exceeds ```2300``` gas but returns bool i.e whether it is successful or not <br>
 ```call``` is gonna be one of the first lower level commands that we use in solidity<br>
 ```call``` is actually incedibly powerful and we can use it virtually to call any function in all of the <br>
 ethereum without having any ABI<br>
+
+
+here in the above code in this line below <br>
+
+```(bool callSuccess, bytes dataReturned)= payable(msg.sender).call{value: address(this).balance}("")``` <br>
+the method call will call different function and if that function returns any value or data that will be <br>
+stored at ```bytes dataReturned``` <br>
 
 
 
