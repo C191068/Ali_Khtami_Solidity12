@@ -424,6 +424,9 @@ Figure4; after clicking the ```Confirm``` button successful transaction occured<
 Figure5: on etherscan on search button when we paste the address of the deployed contract we see that <br>
 two types of transactions occured one due to contract deployment and another due to clicking of the ```fund``` button <br>
 
+![w6](https://github.com/C191068/Ali_Khtami_Solidity13/assets/89090776/48e4e269-87ab-498c-b8a4-9737c611dea1)
+figure6: if we add again ```0.033 Eth``` the amount will rise up to ```0.066 Eth``` this is what we expected<br>
+
 
 
 
