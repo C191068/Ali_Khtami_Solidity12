@@ -253,6 +253,10 @@ For that we have to make such settings so that whoever deploy this contract will
 there is a solution in solidity which is known as ```constructor```, ```constructor``` is gonna be a function that gets called<br>
 immedietly if we deploy this contract <br>
 
+if we set inside the ```constructor()``` function , ```minimumUSD=2``` it will no longer be ```50 * 1e18``` <br>
+
+
+
 
 
 
