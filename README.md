@@ -151,7 +151,6 @@ we simply modified the code below:
 ```
 
 
-
 //SPDX-License-Identifier:MIT
 
 pragma solidity ^0.8.8;
@@ -177,6 +176,8 @@ contract akrkFundMe  {
     //the constructor below will set up as the owner of the contract
 
      constructor(){
+
+         owner= msg.sender; // owner is equal to msg.sender
 
      }
 
@@ -240,6 +241,7 @@ contract akrkFundMe  {
     
 
 }
+
 
 
 
