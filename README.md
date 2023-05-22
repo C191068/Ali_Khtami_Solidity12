@@ -260,6 +260,16 @@ immedietly if we deploy this contract <br>
 
 if we set inside the ```constructor()``` function , ```minimumUSD=2``` it will no longer be ```50 * 1e18``` <br>
 
+ ```
+ constructor(){
+
+         owner= msg.sender; // owner is equal to msg.sender
+
+     }
+     ```
+     here  ```msg.sender``` gonna be whoever deploying the contract<br>
+     
+
 
 
 
