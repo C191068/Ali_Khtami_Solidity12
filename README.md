@@ -150,6 +150,7 @@ we simply modified the code below:
 
 ```
 
+
 //SPDX-License-Identifier:MIT
 
 pragma solidity ^0.8.8;
@@ -206,15 +207,9 @@ contract akrkFundMe  {
      // msg.sender.transfer(address(this).balance); //here 'this' refers to the whole 'akrkFundMe' contract
       // by using .balance we can get ethereum blockchain currency of this contract address 
 
-      payable(msg.sender).transfer(address(this).balance);
-      //here we typecast msg.sender form address typr to payable address type
+      
 
-      //send method
-
-      bool sendSuccess= payable(msg.sender).send(address(this).balance);
-      require(sendSuccess, "fail to send");
-
-      //call
+      //call is the recommended as it forwards all gas and it has no limit and bool like sender
 
       (bool callSuccess, )= payable(msg.sender).call{value: address(this).balance}("");//here inside the bracket of call we gonna call function but now it is kept blank
      // here it gonna returned two variables but we need only one varaible
@@ -232,6 +227,7 @@ contract akrkFundMe  {
     
 
 }
+
 
 ```
 
