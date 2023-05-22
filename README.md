@@ -379,6 +379,9 @@ If we want to use this line ```require(msg.sender == owner, "Sender is not owner
 we have to use something called modifier<br>
 
 Modifier is gonna be a keyword that we gonna use in the function declaration to modify the function with that functionality<br>
+by adding ```modifier``` to thsi function ```function withdraw() public onlyOwner``` we are giving command to the function <br>
+at fisrt do whatever in the ``` modifier onlyOwner``` and do the rest <br>, ``` _;``` means execute rest of the code <br>
+
 
 
 
