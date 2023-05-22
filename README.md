@@ -237,6 +237,8 @@ Now in the above code if we use anybody can withdraw from this contract but we d
 
 We want only person who is collecting the fund able to withdraw the fund <br>
 Withdraw function can only be called by the owner of the contract<br>
+For that we have to make such settings so that whoever deploy this contract will be the owner of this contarct<br>
+
 
 
 
