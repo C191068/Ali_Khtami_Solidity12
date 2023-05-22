@@ -384,12 +384,18 @@ at fisrt do whatever in the ``` modifier onlyOwner``` and do the rest <br>, ``` 
 
 Now we will implement on test net below and it will be sucessfully deployed<br>
 
+![w00](https://github.com/C191068/Ali_Khtami_Solidity13/assets/89090776/f662f428-369a-4f2d-962d-dcd7fc8d6f14)
+Figure1: When we click the ```Deploy``` button our metamask window pops up show the amount required fopr the transaction<br>
+
+
+
+
 ![w1](https://github.com/C191068/Ali_Khtami_Solidity13/assets/89090776/915dfdb4-d67b-4f7b-b5ec-de72ddc154ff)
-Figure1: successfully deployed and transaction occured<br>
+Figure2: successfully deployed and transaction occured<br>
 
 
 ![w2](https://github.com/C191068/Ali_Khtami_Solidity13/assets/89090776/ab69ed5f-9b6e-49dc-934b-a31ce1522831)
-Figure2: in the ddeployed contract we can see that when we click ```mininmumUSD``` button it shows ```$50```<br>
+Figure3: in the ddeployed contract we can see that when we click ```mininmumUSD``` button it shows ```$50```<br>
 when we click ```owner``` button it shows the account addess of our metamask wallet account <br>
 
 
