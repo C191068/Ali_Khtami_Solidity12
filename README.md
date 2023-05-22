@@ -388,6 +388,10 @@ Now we will implement on test net below and it will be sucessfully deployed<br>
 Figure1: successfully deployed and transaction occured<br>
 
 
+![w2](https://github.com/C191068/Ali_Khtami_Solidity13/assets/89090776/ab69ed5f-9b6e-49dc-934b-a31ce1522831)
+Figure2: in the ddeployed contract we can see that when we click ```mininmumUSD``` button it shows ```$50```<br>
+when we click ```owner``` button it shows the account addess of our metamask wallet address <br>
+
 
 
 
