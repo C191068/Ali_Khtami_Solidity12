@@ -108,7 +108,10 @@ here ```transfer``` is the simplest and mostly used<br>
 here we need to know that msg.sender is of address type and payable(msg.sender) is of payable address type<br>
 In solidity in order to send native blockchain currency ethereum we need to work with ```payable address``` type<br>
 
-https://solidity-by-example.org/sending-ether/
+https://solidity-by-example.org/sending-ether/ <br>
+
+if we visit the link above we can find the issues of ```transfer``` method of sending ether which is <br>
+transfer (2300 gas, throws error), if gas limits exceed 2300 gas it will return error<br>
 
 
 
