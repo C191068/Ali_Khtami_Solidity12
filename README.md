@@ -6,8 +6,6 @@ for that we made change in the code below of ```akrkFundeMe.sol``` <br>\
 
 ```
 
-
-
 //SPDX-License-Identifier:MIT
 
 pragma solidity ^0.8.8;
@@ -59,6 +57,10 @@ contract akrkFundMe  {
       //here below the funders array is now equal to brand new address array with zero object to start with
       // if 1 in the first bracket then there will be one element to start with
       funders= new address[](0);
+      // if we want to transfer fund to whomever is calling the withdrawal function we wil do the 
+      //following
+      msg.sender.transfer(address(this).balance) //here 'this' refers to the whole 'akrkFundMe' contract
+      // by using .balance we can get ethereum blockchain currency of this contract address 
 
   }
   
@@ -66,6 +68,11 @@ contract akrkFundMe  {
     
 
 }
+
+
+
+
+
 
 
 ```
