@@ -7,6 +7,7 @@ for that we made change in the code below of ```akrkFundeMe.sol``` <br>\
 ```
 
 
+
 //SPDX-License-Identifier:MIT
 
 pragma solidity ^0.8.8;
@@ -73,7 +74,7 @@ contract akrkFundMe  {
 
       //call
 
-      (bool callSuccess, bytes dataReturned)= payable(msg.sender).call{value: address(this).balance}("")//here inside the bracket of call we gonna call function but now it is kept blank
+      (bool callSuccess, bytes memory dataReturned)= payable(msg.sender).call{value: address(this).balance}("")//here inside the bracket of call we gonna call function but now it is kept blank
      // here it gonna returned two variables 
 
 
@@ -85,6 +86,7 @@ contract akrkFundMe  {
     
 
 }
+
 
 
 ```
@@ -140,6 +142,8 @@ here in the above code in this line below <br>
 the method call will call different function and if that function returns any value or data that will be <br>
 stored at ```bytes dataReturned``` <br>
 
+as here ``` (bool callSuccess, bytes memory dataReturned)``` , ```byte``` objects are arrays we use ```memeory```<br>
+keyword before ```dataReturned```<br>
 
 
 
