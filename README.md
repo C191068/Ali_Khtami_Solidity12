@@ -243,9 +243,6 @@ contract akrkFundMe  {
 }
 
 
-
-
-
 ```
 
 Now in the above code if we use anybody can withdraw from this contract but we don't want everyone to withdraw from this contract<br>
@@ -260,22 +257,13 @@ immedietly if we deploy this contract <br>
 
 if we set inside the ```constructor()``` function , ```minimumUSD=2``` it will no longer be ```50 * 1e18``` <br>
 
- ```
- constructor(){
-
-         owner= msg.sender; // owner is equal to msg.sender
-
-     }
-     ```
-     here  ```msg.sender``` gonna be whoever deploying the contract<br>
+here  ```msg.sender``` inside ```constructor()```  gonna be whoever deploying the contract<br>
      
 
 Now we will modify the ```withdraw``` function below so that only the owner of this contract wil be able to call this function<br>
 
 
 ```
-
-
 
 //SPDX-License-Identifier:MIT
 
@@ -376,6 +364,8 @@ contract akrkFundMe  {
      
 
 
+If we want to use this line ```require(msg.sender == owner, "Sender is not owner!");``` in every functions of the contract<br>
+we have to use something called modifier<br.
 
 
 
