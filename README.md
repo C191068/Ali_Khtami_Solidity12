@@ -441,6 +441,10 @@ Figure9: but see error when we type 2<br>
 ![w10](https://github.com/C191068/Ali_Khtami_Solidity13/assets/89090776/72e09a4e-8fcc-48db-8799-23844410ae4b)
 Figure10: to test the ```withdraw``` button we connect with different account<br>
 
+![w11](https://github.com/C191068/Ali_Khtami_Solidity13/assets/89090776/6a5761ee-7eb8-4651-a568-f95419435e16)
+figure11: Now when we click ```withdraw``` button we see error<br>
+
+
 
 
 
